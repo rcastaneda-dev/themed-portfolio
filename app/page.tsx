@@ -5,7 +5,7 @@ import { SidebarNav } from '@/components/sidebar-nav'
 import { PipelineSimulator } from '@/components/pipeline-simulator'
 import { ProjectsGallery } from '@/components/projects-gallery'
 import { ProjectDetail } from '@/components/project-detail'
-import { ExperienceTimeline } from '@/components/experience-timeline'
+import { ExperienceChangelog } from '@/components/experience-changelog'
 import { Education } from '@/components/education'
 import { TechStack } from '@/components/tech-stack'
 import { ContactForm } from '@/components/contact-form'
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         ) : null
       case 'experience':
-        return <ExperienceTimeline />
+        return <ExperienceChangelog />
       case 'education':
         return <Education />
       case 'tech-stack':
