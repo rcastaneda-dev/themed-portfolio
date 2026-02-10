@@ -18,25 +18,25 @@ const techStack: TechCategory[] = [
     name: 'Languages & Core',
     icon: <Code2 className="h-5 w-5" />,
     description: 'Primary programming languages for automation',
-    technologies: ['JavaScript', 'TypeScript', 'Python', 'Java', 'Bash']
+    technologies: ['JavaScript', 'TypeScript', 'Python', 'Java', 'Bash', 'HTML/CSS']
   },
   {
     name: 'Testing Frameworks',
     icon: <Zap className="h-5 w-5" />,
     description: 'End-to-end and unit testing tools',
-    technologies: ['Playwright', 'Cypress', 'Selenium', 'Jest', 'Mocha', 'TestNG', 'K6 Load Testing']
+    technologies: ['Cypress', 'Playwright', 'TestCafe', 'Selenium WebDriver', 'TestNG', 'PyTest', 'Jest', 'Mocha']
   },
   {
     name: 'DevOps & Infrastructure',
     icon: <Container className="h-5 w-5" />,
     description: 'Pipeline automation and containerization',
-    technologies: ['GitHub Actions', 'GitLab CI', 'Docker', 'Kubernetes', 'Jenkins', 'AWS']
+    technologies: ['Azure DevOps', 'GitHub Actions', 'Jenkins', 'Docker', 'Docker Compose', 'Kubernetes', 'GitLab CI']
   },
   {
     name: 'Testing & Quality Tools',
     icon: <Shield className="h-5 w-5" />,
     description: 'Reporting and quality analysis',
-    technologies: ['Allure Reports', 'Mochawesome', 'SonarQube', 'OWASP', 'Snyk', 'Visual Regression']
+    technologies: ['Allure Reports', 'Mochawesome', 'Test Reports', 'SonarQube', 'Visual Regression', 'Performance Testing']
   }
 ]
 

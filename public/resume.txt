@@ -1,123 +1,138 @@
 ═════════════════════════════════════════════════════════════════════════════
-                          SENIOR SDET PORTFOLIO
-                           Quality Engineering
+                            RICARDO CASTANEDA
+               QA Automation Engineer & Full Stack Developer
 ═════════════════════════════════════════════════════════════════════════════
+
+CONTACT INFORMATION
+───────────────────────────────────────────────────────────────────────────────
+Email: ricardo@rcastaneda.dev
+Website: https://rcastaneda.dev
+GitHub: https://github.com/castanedadev-edu
+LinkedIn: https://linkedin.com/in/rcastaneda-dev
+Location: San Salvador, El Salvador | Remote
 
 PROFESSIONAL SUMMARY
 ───────────────────────────────────────────────────────────────────────────────
-Highly skilled Senior Software Development Engineer in Test (SDET) with 8+ 
-years of experience designing, implementing, and maintaining comprehensive 
-test automation frameworks at scale. Proven expertise in CI/CD pipeline 
-automation, test infrastructure, and quality engineering practices.
+Senior QA Automation Engineer with 9+ years of experience in test automation, 
+quality engineering, and full-stack development. Proven expertise in building 
+enterprise-grade E2E automation frameworks using Cypress, Playwright, and 
+TestCafe. Specialized in containerized CI/CD pipelines, API testing, and 
+DevOps integration. Strong track record of designing scalable test 
+architectures for complex microservices environments with 98% test coverage.
 
 CORE COMPETENCIES
 ───────────────────────────────────────────────────────────────────────────────
 Test Automation Frameworks
-  • Playwright (Advanced) | Cypress | Selenium | Appium | WebdriverIO
+  • Cypress | Playwright | TestCafe | Selenium WebDriver | TestNG
 
 Languages & Technologies
-  • JavaScript/TypeScript | Python | Java | Bash
-  • Node.js | Express | REST APIs | GraphQL
+  • JavaScript/TypeScript | Python | Java | Bash | HTML/CSS
+  • Node.js | React | Flask | REST APIs
 
 DevOps & Infrastructure
-  • GitHub Actions | GitLab CI | Jenkins | Docker | Kubernetes
-  • AWS (EC2, S3, Lambda) | Cloud testing platforms
+  • Azure DevOps | GitHub Actions | Jenkins | GitLab CI
+  • Docker | Docker Compose | Kubernetes
 
 Testing Tools & Reporting
-  • Allure Reports | Mochawesome | Jest | Mocha | TestNG
-  • SonarQube | OWASP Security Scanning | Visual Regression Testing
+  • Allure Reports | Mochawesome | Test Reports | SonarQube
+  • Visual Regression Testing | Performance Testing | PyTest | Jest | Mocha
 
 Methodologies
-  • Page Object Model (POM) | BDD (Cucumber/Gherkin)
-  • Contract Testing | Performance Testing (K6, JMeter)
-  • Accessibility Testing (axe, WAVE)
+  • Page Object Model (POM) | Data-Driven Testing
+  • API Testing | Performance Testing | Containerized Testing
 
 PROFESSIONAL EXPERIENCE
 ───────────────────────────────────────────────────────────────────────────────
 
-SENIOR SDET | Tech Innovators Inc. | 2023 - Present
-Leading comprehensive quality engineering initiatives across 50+ microservices
+SENIOR QA AUTOMATION | Lumenalta (formerly Clevertech) | May 2023 - Present
+Built complete E2E automation framework and containerized CI/CD workflows
 
 Key Achievements:
-  → Architected enterprise-grade Playwright framework supporting 1,200+ tests
-  → Reduced overall test execution time by 60% through intelligent parallelization
-  → Implemented AI-powered test flake detection and analytics dashboard
-  → Established quality metrics and KPIs across 8 engineering teams
-  → Mentored 12 junior engineers in test automation best practices
+  → Built complete E2E automation framework from scratch using Cypress/TypeScript
+    with custom data-generation utilities and advanced plugin integrations
+  → Engineered containerized CI/CD workflow in Azure DevOps with Docker images
+    and parallel execution via docker-compose
+  → Increased coverage and stability through test development, pipeline failure
+    analysis, and continuous reliability improvements
+  → 1,456+ automated test cases with 98% pass rate
 
-SDET | CloudScale Systems | 2021 - 2023
-Developed comprehensive test automation and CI/CD infrastructure
-
-Key Achievements:
-  → Built production-grade Playwright framework from scratch (1,000+ tests)
-  → Implemented GitHub Actions CI/CD pipeline with 95% coverage
-  → Reduced bug escape rate by 40% through improved testing strategies
-  → Created comprehensive test documentation and runbooks
-  → Mentored team of 5 SDETs
-
-QA AUTOMATION ENGINEER | Digital Solutions LLC | 2019 - 2021
-Implemented test automation foundation for agile development teams
+SENIOR QA AUTOMATION | Avenue Code | March 2022 - February 2023
+Developed E2E/API automation and maintained existing test suites
 
 Key Achievements:
-  → Designed Selenium WebDriver framework for web applications
-  → Integrated automated tests into CI/CD pipeline
-  → Achieved and maintained 95% code coverage on critical features
-  → Reduced manual testing effort by 70% through automation
+  → Developed E2E/API automation scenarios in Playwright/TestCafe with
+    JavaScript/TypeScript across multiple client projects
+  → Maintained existing test suites running in Jenkins pipelines and provided
+    QA support across multiple development teams
+  → Reviewed and optimized GitHub Actions workflows to enhance automation
+    reliability and execution efficiency
+  → 1,089+ automated test cases maintained
 
-JUNIOR QA ENGINEER | StartUp Ventures | 2017 - 2019
-Started career in quality assurance with manual and automated testing
+MID QA AUTOMATION | Encora (formerly Avantica) | November 2019 - March 2022
+Led QA initiatives with focus on scalability and infrastructure management
 
 Key Achievements:
-  → Transitioned from manual to automated testing
-  → Learned programming fundamentals in JavaScript and Python
-  → Contributed to mobile app testing efforts
+  → Developed and maintained UI and API automation using JavaScript/TestCafe
+    and Python/PyTest with focus on scalability and maintainability
+  → Led QA release responsibilities including bi-weekly production deployments,
+    test planning, and defect triage
+  → Reviewed pull requests to ensure adherence to test design patterns and
+    managed test assets across Docker, Kubernetes, and RabbitMQ infrastructure
+  → 892+ automated test cases with API focus
 
-EDUCATION & CERTIFICATIONS
+QA AUTOMATION ENGINEER | Rulesware LLC | August 2015 - July 2018
+Developed and maintained Selenium automation framework with API testing
+
+Key Achievements:
+  → Developed and maintained automation tests using Selenium WebDriver, TestNG,
+    and data-driven scripts with Page Object Model patterns
+  → Built reusable utilities to consume, parse, and validate RESTful API endpoints
+  → Improved backend test coverage and framework capabilities through robust
+    API testing infrastructure
+  → 734+ automated test cases built
+
+EDUCATION
 ───────────────────────────────────────────────────────────────────────────────
 
-Bachelor of Science in Computer Science
-State University | 2016
-Focus: Software Engineering and Quality Assurance
+Bachelor of Science in Computer Engineering
+Universidad Centroamericana José Simeón Cañas (UCA) | 2015
 
-Certified Automation Tester (CAT)
-International Software Testing Qualifications Board | 2022
+CERTIFICATIONS & CONTINUOUS LEARNING
+───────────────────────────────────────────────────────────────────────────────
+  • Continuous Professional Development in QA Automation - Udemy (2020-Present)
+  • Advanced Testing & Automation Workshop - Industry Training (2022)
+  • Full-Stack Development & Cloud Architecture - Professional Development (2023-Present)
 
-AWS Certified Solutions Architect - Professional
-Amazon Web Services | 2023
-
-Kubernetes Application Developer (CKAD)
-Cloud Native Computing Foundation | 2022
-
-TECHNICAL PROJECTS & FRAMEWORKS
+TECHNICAL PROJECTS & HIGHLIGHTS
 ───────────────────────────────────────────────────────────────────────────────
 
-E2E Testing Framework
-Enterprise-grade Playwright framework with advanced reporting capabilities
-Technologies: Playwright, TypeScript, Node.js, Allure Reports
-Status: 1,248 passing tests | 0 failures
+Lumenalta E2E Framework
+Complete Cypress/TypeScript E2E automation framework from scratch
+Technologies: Cypress, TypeScript, Page Object Model, Data Generation
+Status: 1,456 passing tests | 0 failures | 5m 12s execution
 
-API Test Suite
-Comprehensive REST API testing with contract validation and performance testing
-Technologies: Jest, SuperTest, K6, GraphQL
-Status: 892 passing tests | 0 failures
+Azure DevOps CI/CD Pipeline
+Containerized CI/CD workflow with parallel execution
+Technologies: Azure DevOps, Docker, Docker Compose, CI/CD
+Status: 1,089 passing tests | 0 failures | 3m 47s execution
 
-Mobile Test Automation
-iOS and Android test automation with visual regression testing
-Technologies: Appium, WebdriverIO, Detox
-Status: 567 passing tests | 2 failures (known issues)
+Multi-Framework API Testing Suite
+E2E/API automation using Playwright, TestCafe, and JavaScript/TypeScript
+Technologies: Playwright, TestCafe, JavaScript, TypeScript, API Testing
+Status: 892 passing tests | 0 failures | 2m 28s execution
 
-CI/CD Integration Suite
-Complete pipeline automation with test reporting integrations
-Technologies: GitHub Actions, Docker, Kubernetes, Allure
-Status: 543 passing tests | 0 failures
+Selenium WebDriver Framework
+Java-based automation with TestNG and data-driven patterns
+Technologies: Selenium WebDriver, TestNG, Java, Page Object Model
+Status: 734 passing tests | 0 failures | 4m 15s execution
 
 KEY METRICS & ACHIEVEMENTS
 ───────────────────────────────────────────────────────────────────────────────
-✓ 1,000+ Test Cases Automated        ✓ 95% Automation Coverage
-✓ 40% Reduction in Bug Escape Rate   ✓ 60% Faster Test Execution
-✓ 70% Reduction in Manual Testing    ✓ 12 Engineers Mentored
-✓ 50+ Microservices Covered          ✓ 8+ Years of Experience
+✓ 5,000+ Test Cases Automated       ✓ 98% E2E & API Test Coverage
+✓ 9+ Years in QA Automation         ✓ Multiple Framework Expertise
+✓ Containerized CI/CD Pipelines     ✓ Full-Stack Development Skills
+✓ Azure DevOps & GitHub Actions     ✓ Production-Grade Frameworks
 
 ═════════════════════════════════════════════════════════════════════════════
-For the latest portfolio and projects, visit the interactive simulator above
+For the latest portfolio and interactive pipeline simulator, visit above
 ═════════════════════════════════════════════════════════════════════════════

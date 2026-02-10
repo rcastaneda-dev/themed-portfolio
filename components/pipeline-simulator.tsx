@@ -88,24 +88,24 @@ export function PipelineSimulator() {
         <Card className="bg-secondary/40 border-border/50 hover:border-primary/30 transition-all hover:bg-secondary/60 animate-fade-in-up" style={{ animationDelay: '0s' }}>
           <CardContent className="pt-6">
             <div className="text-sm text-muted-foreground mb-2">Experience Level</div>
-            <div className="text-3xl font-bold text-primary">8+</div>
-            <div className="text-xs text-muted-foreground mt-1">Years as Senior SDET</div>
+            <div className="text-3xl font-bold text-primary">9+</div>
+            <div className="text-xs text-muted-foreground mt-1">Years in QA Automation</div>
           </CardContent>
         </Card>
 
         <Card className="bg-secondary/40 border-border/50 hover:border-primary/30 transition-all hover:bg-secondary/60 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           <CardContent className="pt-6">
-            <div className="text-sm text-muted-foreground mb-2">Bugs Squashed</div>
-            <div className="text-3xl font-bold text-primary">1k+</div>
-            <div className="text-xs text-muted-foreground mt-1">Test cases automated</div>
+            <div className="text-sm text-muted-foreground mb-2">Tests Automated</div>
+            <div className="text-3xl font-bold text-primary">5k+</div>
+            <div className="text-xs text-muted-foreground mt-1">Across multiple frameworks</div>
           </CardContent>
         </Card>
 
         <Card className="bg-secondary/40 border-border/50 hover:border-primary/30 transition-all hover:bg-secondary/60 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <CardContent className="pt-6">
             <div className="text-sm text-muted-foreground mb-2">Coverage Rate</div>
-            <div className="text-3xl font-bold text-primary">95%</div>
-            <div className="text-xs text-muted-foreground mt-1">Automation coverage</div>
+            <div className="text-3xl font-bold text-primary">98%</div>
+            <div className="text-xs text-muted-foreground mt-1">E2E & API test coverage</div>
           </CardContent>
         </Card>
       </div>

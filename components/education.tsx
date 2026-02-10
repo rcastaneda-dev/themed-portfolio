@@ -15,31 +15,31 @@ interface EducationItem {
 const education: EducationItem[] = [
   {
     type: 'degree',
-    title: 'Bachelor of Science in Computer Science',
-    institution: 'State University',
-    year: '2016',
-    description: 'Focus on software engineering and quality assurance practices'
+    title: 'Bachelor of Science in Computer Engineering',
+    institution: 'Universidad Centroamericana José Simeón Cañas (UCA)',
+    year: '2015',
+    description: 'Comprehensive computer engineering education with software development focus'
   },
   {
     type: 'certification',
-    title: 'Certified Automation Tester (CAT)',
-    institution: 'International Software Testing Qualifications Board',
+    title: 'Continuous Learning in QA Automation',
+    institution: 'Udemy & Professional Courses',
+    year: '2020 - Present',
+    description: 'Ongoing professional development in test automation frameworks and DevOps practices'
+  },
+  {
+    type: 'certification',
+    title: 'Advanced Testing & Automation Workshop',
+    institution: 'Industry Training Programs',
     year: '2022',
-    description: 'Advanced certification in test automation technologies'
+    description: 'Specialized training in modern automation frameworks and CI/CD best practices'
   },
   {
     type: 'certification',
-    title: 'AWS Certified Solutions Architect',
-    institution: 'Amazon Web Services',
-    year: '2023',
-    description: 'Professional-level cloud architecture and deployment expertise'
-  },
-  {
-    type: 'certification',
-    title: 'Kubernetes Application Developer (CKAD)',
-    institution: 'Cloud Native Computing Foundation',
-    year: '2022',
-    description: 'Certified expertise in containerized application development'
+    title: 'Full-Stack Development & Cloud Architecture',
+    institution: 'Professional Development',
+    year: '2023 - Present',
+    description: 'Expanding skills in full-stack development and cloud-native testing infrastructure'
   }
 ]
 

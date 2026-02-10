@@ -140,15 +140,31 @@ export function ContactForm() {
             </div>
 
             <div className="pt-4 border-t border-border/50">
-              <p className="text-xs text-muted-foreground mb-3 font-mono uppercase">Contact Info</p>
-              <div className="space-y-2">
+              <p className="text-xs text-muted-foreground mb-3 font-mono uppercase">Contact & Social</p>
+              <div className="space-y-3">
                 <div>
                   <p className="text-xs text-muted-foreground">Email</p>
-                  <p className="text-sm font-medium text-foreground">hello@sdet.dev</p>
+                  <a href="mailto:ricardo@rcastaneda.dev" className="text-sm font-medium text-primary hover:underline">
+                    ricardo@rcastaneda.dev
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground">Website</p>
+                  <a href="https://rcastaneda.dev" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
+                    rcastaneda.dev
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground">GitHub</p>
+                  <a href="https://github.com/castanedadev-edu" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
+                    github.com/castanedadev-edu
+                  </a>
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">LinkedIn</p>
-                  <p className="text-sm font-medium text-primary">linkedin.com/in/sdet</p>
+                  <a href="https://linkedin.com/in/rcastaneda-dev" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
+                    linkedin.com/in/rcastaneda-dev
+                  </a>
                 </div>
               </div>
             </div>

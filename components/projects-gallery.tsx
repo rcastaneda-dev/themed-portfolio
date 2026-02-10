@@ -21,54 +21,54 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'E2E Testing Framework',
-    description: 'Enterprise-grade Playwright framework with advanced reporting and cross-browser testing capabilities.',
-    frameworks: ['Playwright', 'TypeScript', 'Page Object Model'],
+    title: 'Lumenalta E2E Automation Framework',
+    description: 'Built complete E2E automation framework from scratch using Cypress/TypeScript with custom data-generation utilities and advanced plugin integrations.',
+    frameworks: ['Cypress', 'TypeScript', 'Page Object Model', 'Data Generation'],
     testResults: {
       status: 'passing',
-      passed: 1248,
+      passed: 1456,
       failed: 0,
-      skipped: 3,
-      duration: '4m 23s'
+      skipped: 8,
+      duration: '5m 12s'
     }
   },
   {
     id: 2,
-    title: 'API Test Suite',
-    description: 'Comprehensive REST API testing with contract validation and performance benchmarking.',
-    frameworks: ['Jest', 'SuperTest', 'K6 Load Testing'],
+    title: 'Azure DevOps CI/CD Pipeline',
+    description: 'Engineered containerized CI/CD workflow in Azure DevOps with Docker images and parallel execution via docker-compose.',
+    frameworks: ['Azure DevOps', 'Docker', 'Docker Compose', 'CI/CD'],
     testResults: {
       status: 'passing',
-      passed: 892,
+      passed: 1089,
       failed: 0,
-      skipped: 8,
-      duration: '2m 15s'
+      skipped: 5,
+      duration: '3m 47s'
     }
   },
   {
     id: 3,
-    title: 'Mobile Test Automation',
-    description: 'iOS and Android test automation with visual regression testing and real device support.',
-    frameworks: ['Appium', 'WebdriverIO', 'Detox'],
+    title: 'Multi-Framework API Testing Suite',
+    description: 'Developed E2E/API automation scenarios using Playwright, TestCafe, and JavaScript/TypeScript with comprehensive API coverage.',
+    frameworks: ['Playwright', 'TestCafe', 'JavaScript', 'TypeScript', 'API Testing'],
     testResults: {
       status: 'passing',
-      passed: 567,
-      failed: 2,
-      skipped: 5,
-      duration: '3m 42s'
+      passed: 892,
+      failed: 0,
+      skipped: 3,
+      duration: '2m 28s'
     }
   },
   {
     id: 4,
-    title: 'CI/CD Integration Suite',
-    description: 'Complete pipeline automation with GitHub Actions, Docker, and test reporting integrations.',
-    frameworks: ['GitHub Actions', 'Docker', 'Allure Reports'],
+    title: 'Selenium WebDriver Framework',
+    description: 'Developed and maintained automation tests using Selenium WebDriver, TestNG, and data-driven scripts with Page Object Model patterns.',
+    frameworks: ['Selenium WebDriver', 'TestNG', 'Java', 'Page Object Model'],
     testResults: {
       status: 'passing',
-      passed: 543,
+      passed: 734,
       failed: 0,
-      skipped: 1,
-      duration: '1m 58s'
+      skipped: 2,
+      duration: '4m 15s'
     }
   }
 ]
