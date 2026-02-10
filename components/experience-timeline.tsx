@@ -13,47 +13,47 @@ interface TimelineItem {
 
 const experiences: TimelineItem[] = [
   {
-    year: '2023 - Present',
-    title: 'Senior SDET',
-    company: 'Tech Innovators Inc.',
-    description: 'Leading quality engineering initiatives for high-scale microservices architecture',
+    year: 'May 2023 - Present',
+    title: 'Senior QA Automation',
+    company: 'Lumenalta (formerly Clevertech)',
+    description: 'Built complete E2E automation framework and containerized CI/CD workflows from scratch',
     highlights: [
-      'Architected end-to-end testing framework for 50+ services',
-      'Reduced test execution time by 60% through parallelization',
-      'Implemented AI-powered test analytics and flake detection'
+      'Built complete E2E automation framework using Cypress/TypeScript with custom data-generation utilities and advanced plugin integrations',
+      'Engineered containerized CI/CD workflow in Azure DevOps with Docker images and parallel execution via docker-compose',
+      'Increased coverage and stability through test development, pipeline failure analysis, and continuous reliability improvements'
     ]
   },
   {
-    year: '2021 - 2023',
-    title: 'SDET',
-    company: 'CloudScale Systems',
-    description: 'Developed comprehensive test automation and CI/CD infrastructure',
+    year: 'March 2022 - February 2023',
+    title: 'Senior QA Automation',
+    company: 'Avenue Code',
+    description: 'Developed E2E/API automation and maintained existing test suites across multiple teams',
     highlights: [
-      'Built Playwright automation framework with 1000+ test cases',
-      'Established DevOps practices reducing deployment friction by 80%',
-      'Mentored team of 5 junior SDETs'
+      'Developed E2E/API automation scenarios in Playwright/TestCafe with JavaScript/TypeScript',
+      'Maintained existing test suites running in Jenkins pipelines and provided QA support across multiple teams',
+      'Reviewed and optimized GitHub Actions workflows to enhance automation reliability and efficiency'
     ]
   },
   {
-    year: '2019 - 2021',
+    year: 'November 2019 - March 2022',
+    title: 'Mid QA Automation',
+    company: 'Encora (formerly Avantica)',
+    description: 'Led QA initiatives with focus on scalability and infrastructure management',
+    highlights: [
+      'Developed and maintained UI and API automation using JavaScript/TestCafe and Python/PyTest with focus on scalability',
+      'Led QA release responsibilities including bi-weekly production deployments, test planning, and defect triage',
+      'Reviewed pull requests to ensure adherence to test design patterns and managed test assets across Docker, Kubernetes, and RabbitMQ infrastructure'
+    ]
+  },
+  {
+    year: 'August 2015 - July 2018',
     title: 'QA Automation Engineer',
-    company: 'Digital Solutions LLC',
-    description: 'Implemented test automation from scratch for agile teams',
+    company: 'Rulesware LLC',
+    description: 'Developed and maintained Selenium automation framework with API testing capabilities',
     highlights: [
-      'Created Selenium WebDriver framework for web applications',
-      'Integrated tests into CI/CD pipeline with GitHub Actions',
-      'Achieved 95% code coverage across critical features'
-    ]
-  },
-  {
-    year: '2017 - 2019',
-    title: 'Junior QA Engineer',
-    company: 'StartUp Ventures',
-    description: 'Started career in quality assurance with manual and automated testing',
-    highlights: [
-      'Transitioned from manual testing to automation',
-      'Learned programming fundamentals in JavaScript and Python',
-      'Contributed to mobile app testing efforts'
+      'Developed and maintained automation tests using Selenium WebDriver, TestNG, and data-driven scripts with Page Object Models',
+      'Built reusable utilities to consume, parse, and validate RESTful API endpoints',
+      'Improved backend test coverage and framework capabilities through robust API testing infrastructure'
     ]
   }
 ]
