@@ -4,23 +4,56 @@ import { useState } from 'react'
 import { SidebarNav } from '@/components/sidebar-nav'
 import { PipelineSimulator } from '@/components/pipeline-simulator'
 import { ProjectsGallery } from '@/components/projects-gallery'
+import { ProjectDetail } from '@/components/project-detail'
 import { ExperienceTimeline } from '@/components/experience-timeline'
 import { Education } from '@/components/education'
 import { TechStack } from '@/components/tech-stack'
 import { ContactForm } from '@/components/contact-form'
 import { Toaster } from '@/components/ui/toaster'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
 
-type Section = 'overview' | 'projects' | 'experience' | 'education' | 'tech-stack' | 'contact'
+type Section = 'overview' | 'projects' | 'experience' | 'education' | 'tech-stack' | 'contact' | 'project-detail'
+
+interface ProjectDetailState {
+  projectId: string
+  projectTitle: string
+}
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<Section>('overview')
+  const [selectedProject, setSelectedProject] = useState<ProjectDetailState | null>(null)
+
+  const handleProjectClick = (projectId: string, projectTitle: string) => {
+    setSelectedProject({ projectId, projectTitle })
+    setActiveSection('project-detail')
+  }
+
+  const handleBackToProjects = () => {
+    setSelectedProject(null)
+    setActiveSection('projects')
+  }
 
   const renderSection = () => {
     switch (activeSection) {
       case 'overview':
         return <PipelineSimulator />
       case 'projects':
-        return <ProjectsGallery />
+        return <ProjectsGallery onProjectClick={handleProjectClick} />
+      case 'project-detail':
+        return selectedProject ? (
+          <div className="space-y-4">
+            <Button
+              variant="ghost"
+              onClick={handleBackToProjects}
+              className="gap-2"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Projects
+            </Button>
+            <ProjectDetail projectId={selectedProject.projectId} projectTitle={selectedProject.projectTitle} />
+          </div>
+        ) : null
       case 'experience':
         return <ExperienceTimeline />
       case 'education':

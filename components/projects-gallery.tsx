@@ -80,7 +80,11 @@ const projects: Project[] = [
   }
 ]
 
-export function ProjectsGallery() {
+interface ProjectsGalleryProps {
+  onProjectClick?: (projectId: string, projectTitle: string) => void
+}
+
+export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
   return (
     <div className="space-y-6">
       <div>
@@ -92,7 +96,12 @@ export function ProjectsGallery() {
 
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
         {projects.map((project, index) => (
-          <div key={project.id} className="relative group" style={{ opacity: 1 }}>
+          <div
+            key={project.id}
+            className="relative group cursor-pointer"
+            onClick={() => onProjectClick?.(project.id, project.title)}
+            style={{ opacity: 1 }}
+          >
             {/* Gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-xl pointer-events-none" />
 
