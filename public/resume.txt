@@ -1,0 +1,123 @@
+═════════════════════════════════════════════════════════════════════════════
+                          SENIOR SDET PORTFOLIO
+                           Quality Engineering
+═════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL SUMMARY
+───────────────────────────────────────────────────────────────────────────────
+Highly skilled Senior Software Development Engineer in Test (SDET) with 8+ 
+years of experience designing, implementing, and maintaining comprehensive 
+test automation frameworks at scale. Proven expertise in CI/CD pipeline 
+automation, test infrastructure, and quality engineering practices.
+
+CORE COMPETENCIES
+───────────────────────────────────────────────────────────────────────────────
+Test Automation Frameworks
+  • Playwright (Advanced) | Cypress | Selenium | Appium | WebdriverIO
+
+Languages & Technologies
+  • JavaScript/TypeScript | Python | Java | Bash
+  • Node.js | Express | REST APIs | GraphQL
+
+DevOps & Infrastructure
+  • GitHub Actions | GitLab CI | Jenkins | Docker | Kubernetes
+  • AWS (EC2, S3, Lambda) | Cloud testing platforms
+
+Testing Tools & Reporting
+  • Allure Reports | Mochawesome | Jest | Mocha | TestNG
+  • SonarQube | OWASP Security Scanning | Visual Regression Testing
+
+Methodologies
+  • Page Object Model (POM) | BDD (Cucumber/Gherkin)
+  • Contract Testing | Performance Testing (K6, JMeter)
+  • Accessibility Testing (axe, WAVE)
+
+PROFESSIONAL EXPERIENCE
+───────────────────────────────────────────────────────────────────────────────
+
+SENIOR SDET | Tech Innovators Inc. | 2023 - Present
+Leading comprehensive quality engineering initiatives across 50+ microservices
+
+Key Achievements:
+  → Architected enterprise-grade Playwright framework supporting 1,200+ tests
+  → Reduced overall test execution time by 60% through intelligent parallelization
+  → Implemented AI-powered test flake detection and analytics dashboard
+  → Established quality metrics and KPIs across 8 engineering teams
+  → Mentored 12 junior engineers in test automation best practices
+
+SDET | CloudScale Systems | 2021 - 2023
+Developed comprehensive test automation and CI/CD infrastructure
+
+Key Achievements:
+  → Built production-grade Playwright framework from scratch (1,000+ tests)
+  → Implemented GitHub Actions CI/CD pipeline with 95% coverage
+  → Reduced bug escape rate by 40% through improved testing strategies
+  → Created comprehensive test documentation and runbooks
+  → Mentored team of 5 SDETs
+
+QA AUTOMATION ENGINEER | Digital Solutions LLC | 2019 - 2021
+Implemented test automation foundation for agile development teams
+
+Key Achievements:
+  → Designed Selenium WebDriver framework for web applications
+  → Integrated automated tests into CI/CD pipeline
+  → Achieved and maintained 95% code coverage on critical features
+  → Reduced manual testing effort by 70% through automation
+
+JUNIOR QA ENGINEER | StartUp Ventures | 2017 - 2019
+Started career in quality assurance with manual and automated testing
+
+Key Achievements:
+  → Transitioned from manual to automated testing
+  → Learned programming fundamentals in JavaScript and Python
+  → Contributed to mobile app testing efforts
+
+EDUCATION & CERTIFICATIONS
+───────────────────────────────────────────────────────────────────────────────
+
+Bachelor of Science in Computer Science
+State University | 2016
+Focus: Software Engineering and Quality Assurance
+
+Certified Automation Tester (CAT)
+International Software Testing Qualifications Board | 2022
+
+AWS Certified Solutions Architect - Professional
+Amazon Web Services | 2023
+
+Kubernetes Application Developer (CKAD)
+Cloud Native Computing Foundation | 2022
+
+TECHNICAL PROJECTS & FRAMEWORKS
+───────────────────────────────────────────────────────────────────────────────
+
+E2E Testing Framework
+Enterprise-grade Playwright framework with advanced reporting capabilities
+Technologies: Playwright, TypeScript, Node.js, Allure Reports
+Status: 1,248 passing tests | 0 failures
+
+API Test Suite
+Comprehensive REST API testing with contract validation and performance testing
+Technologies: Jest, SuperTest, K6, GraphQL
+Status: 892 passing tests | 0 failures
+
+Mobile Test Automation
+iOS and Android test automation with visual regression testing
+Technologies: Appium, WebdriverIO, Detox
+Status: 567 passing tests | 2 failures (known issues)
+
+CI/CD Integration Suite
+Complete pipeline automation with test reporting integrations
+Technologies: GitHub Actions, Docker, Kubernetes, Allure
+Status: 543 passing tests | 0 failures
+
+KEY METRICS & ACHIEVEMENTS
+───────────────────────────────────────────────────────────────────────────────
+✓ 1,000+ Test Cases Automated        ✓ 95% Automation Coverage
+✓ 40% Reduction in Bug Escape Rate   ✓ 60% Faster Test Execution
+✓ 70% Reduction in Manual Testing    ✓ 12 Engineers Mentored
+✓ 50+ Microservices Covered          ✓ 8+ Years of Experience
+
+═════════════════════════════════════════════════════════════════════════════
+For the latest portfolio and projects, visit the interactive simulator above
+═════════════════════════════════════════════════════════════════════════════
