@@ -111,6 +111,15 @@
   }
 }
 
+@keyframes neon-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.3), 0 0 20px rgba(0, 255, 200, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.6), 0 0 40px rgba(0, 255, 200, 0.3);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -149,5 +158,29 @@
     background: rgba(31, 41, 55, 0.4);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-effect {
+    background: rgba(31, 41, 55, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .neon-glow {
+    animation: neon-glow 3s ease-in-out infinite;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
