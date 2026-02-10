@@ -4,7 +4,7 @@ import React from "react"
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Code2, Zap, Container, Shield } from 'lucide-react'
+import { Code2, Zap, Container, Shield, Braces, TestTubes, Cpu, CheckCircle2 } from 'lucide-react'
 
 interface TechCategory {
   name: string
@@ -16,25 +16,25 @@ interface TechCategory {
 const techStack: TechCategory[] = [
   {
     name: 'Languages & Core',
-    icon: <Code2 className="h-5 w-5" />,
+    icon: <Braces className="h-6 w-6" />,
     description: 'Primary programming languages for automation',
     technologies: ['JavaScript', 'TypeScript', 'Python', 'Java', 'Bash', 'HTML/CSS']
   },
   {
     name: 'Testing Frameworks',
-    icon: <Zap className="h-5 w-5" />,
+    icon: <TestTubes className="h-6 w-6" />,
     description: 'End-to-end and unit testing tools',
     technologies: ['Cypress', 'Playwright', 'TestCafe', 'Selenium WebDriver', 'TestNG', 'PyTest', 'Jest', 'Mocha']
   },
   {
     name: 'DevOps & Infrastructure',
-    icon: <Container className="h-5 w-5" />,
+    icon: <Cpu className="h-6 w-6" />,
     description: 'Pipeline automation and containerization',
     technologies: ['Azure DevOps', 'GitHub Actions', 'Jenkins', 'Docker', 'Docker Compose', 'Kubernetes', 'GitLab CI']
   },
   {
     name: 'Testing & Quality Tools',
-    icon: <Shield className="h-5 w-5" />,
+    icon: <CheckCircle2 className="h-6 w-6" />,
     description: 'Reporting and quality analysis',
     technologies: ['Allure Reports', 'Mochawesome', 'Test Reports', 'SonarQube', 'Visual Regression', 'Performance Testing']
   }
