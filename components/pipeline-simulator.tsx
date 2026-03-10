@@ -90,7 +90,7 @@ export function PipelineSimulator() {
       <div className="animate-fade-in-up">
         <div className="flex items-center gap-2 mb-3">
           <div className="h-px flex-1 max-w-[40px] bg-primary/40" />
-          <span className="text-xs font-mono text-primary tracking-widest uppercase">Command Center</span>
+          <span className="text-xs font-mono text-primary tracking-widest uppercase">Engineering Dashboard</span>
         </div>
         <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-2">Quality Engineering Dashboard</h2>
         <p className="text-muted-foreground max-w-xl">
