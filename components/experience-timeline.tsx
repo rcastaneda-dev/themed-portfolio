@@ -18,7 +18,7 @@ const experiences: TimelineItem[] = [
     company: 'Lumenalta (formerly Clevertech)',
     description: 'Built complete E2E automation framework and containerized CI/CD workflows from scratch',
     highlights: [
-      'Built complete E2E automation framework using Cypress/TypeScript with custom data-generation utilities and advanced plugin integrations',
+      'Built complete E2E automation framework using Cypress/TypeScript custom data-generation utilities and advanced plugin integrations',
       'Engineered containerized CI/CD workflow in Azure DevOps with Docker images and parallel execution via docker-compose',
       'Increased coverage and stability through test development, pipeline failure analysis, and continuous reliability improvements'
     ]

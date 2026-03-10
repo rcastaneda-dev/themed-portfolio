@@ -7,7 +7,7 @@ CONTACT INFORMATION
 ───────────────────────────────────────────────────────────────────────────────
 Email: ricardo@rcastaneda.dev
 Website: https://rcastaneda.dev
-GitHub: https://github.com/castanedadev-edu
+GitHub: https://github.com/rcastaneda-dev
 LinkedIn: https://linkedin.com/in/rcastaneda-dev
 Location: San Salvador, El Salvador | Remote
 

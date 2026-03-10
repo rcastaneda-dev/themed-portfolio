@@ -2,9 +2,8 @@
 
 import React from "react"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { CheckCircle2, AlertCircle, Zap, Code2, Container, Shield } from 'lucide-react'
+import { CheckCircle2, AlertCircle, Code2, Container, Zap, Shield, FileText, ArrowUpRight } from 'lucide-react'
 
 interface Project {
   id: string
@@ -23,61 +22,75 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: '1',
-    title: 'Lumenalta E2E Automation Framework',
-    description: 'Built complete E2E automation framework from scratch using Cypress/TypeScript with custom data-generation utilities and advanced plugin integrations.',
-    frameworks: ['Cypress', 'TypeScript', 'Page Object Model', 'Data Generation'],
-    icon: <Code2 className="w-8 h-8" />,
+    id: '5',
+    title: 'Paquetes.sv',
+    description: 'Student uniform distribution management system for educational institutions in El Salvador. Generates bulk PDF/ZIP reports at scale with atomic task orchestration and concurrent processing.',
+    frameworks: ['Next.js', 'TypeScript', 'Supabase', 'PDFKit', 'Node.js'],
+    icon: <FileText className="w-6 h-6" />,
     testResults: {
       status: 'passing',
-      passed: 1456,
+      passed: 54,
       failed: 0,
-      skipped: 8,
-      duration: '5m 12s'
+      skipped: 1,
+      duration: '1m 08s'
+    }
+  },
+  {
+    id: '1',
+    title: 'Nanis Essentials Inventory',
+    description: 'A full-featured business management SPA for a cosmetics retail operation. Built with React/TypeScript and Supabase (authentication, file storage, RLS), with end-to-end testing in Playwright/TypeScript.',
+    frameworks: ['React', 'TypeScript', 'Supabase', 'Playwright', 'RLS'],
+    icon: <Code2 className="w-6 h-6" />,
+    testResults: {
+      status: 'passing',
+      passed: 86,
+      failed: 0,
+      skipped: 2,
+      duration: '1m 34s'
     }
   },
   {
     id: '2',
-    title: 'Azure DevOps CI/CD Pipeline',
-    description: 'Engineered containerized CI/CD workflow in Azure DevOps with Docker images and parallel execution via docker-compose.',
-    frameworks: ['Azure DevOps', 'Docker', 'Docker Compose', 'CI/CD'],
-    icon: <Container className="w-8 h-8" />,
+    title: 'Playwright Assessment',
+    description: 'Practical test assessment for an Automation QA Engineer role. Implements structured E2E test automation using Playwright with TypeScript, demonstrating page object patterns and test organization.',
+    frameworks: ['Playwright', 'TypeScript', 'Page Objects', 'E2E Testing'],
+    icon: <Zap className="w-6 h-6" />,
     testResults: {
       status: 'passing',
-      passed: 1089,
+      passed: 42,
       failed: 0,
-      skipped: 5,
-      duration: '3m 47s'
+      skipped: 1,
+      duration: '0m 48s'
     }
   },
   {
     id: '3',
-    title: 'Multi-Framework API Testing Suite',
-    description: 'Developed E2E/API automation scenarios using Playwright, TestCafe, and JavaScript/TypeScript with comprehensive API coverage.',
-    frameworks: ['Playwright', 'TestCafe', 'JavaScript', 'TypeScript', 'API Testing'],
-    icon: <Zap className="w-8 h-8" />,
+    title: 'k6 Load Testing Suite',
+    description: 'TypeScript-based performance and load testing project using k6 against the PetStore API. Covers stress testing, spike testing, and soak testing scenarios with structured reporting.',
+    frameworks: ['k6', 'TypeScript', 'Load Testing', 'Performance', 'REST API'],
+    icon: <Container className="w-6 h-6" />,
     testResults: {
       status: 'passing',
-      passed: 892,
+      passed: 128,
       failed: 0,
-      skipped: 3,
-      duration: '2m 28s'
+      skipped: 0,
+      duration: '2m 15s'
     }
   },
   {
-    id: '4',
-    title: 'Selenium WebDriver Framework',
-    description: 'Developed and maintained automation tests using Selenium WebDriver, TestNG, and data-driven scripts with Page Object Model patterns.',
-    frameworks: ['Selenium WebDriver', 'TestNG', 'Java', 'Page Object Model'],
-    icon: <Shield className="w-8 h-8" />,
+    id: '6',
+    title: 'TestCafe Automation Challenge',
+    description: 'SDET coding challenge for TheoremOne LLC implementing E2E test automation using JavaScript and TestCafe. Demonstrates structured test design, selectors, and assertions against a web application.',
+    frameworks: ['TestCafe', 'JavaScript', 'E2E Testing', 'Selectors'],
+    icon: <Zap className="w-6 h-6" />,
     testResults: {
       status: 'passing',
-      passed: 734,
+      passed: 18,
       failed: 0,
-      skipped: 2,
-      duration: '4m 15s'
+      skipped: 0,
+      duration: '0m 26s'
     }
-  }
+  },
 ]
 
 interface ProjectsGalleryProps {
@@ -86,60 +99,63 @@ interface ProjectsGalleryProps {
 
 export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
   return (
-    <div className="space-y-6">
-      <div>
-        <h2 className="text-2xl font-bold text-foreground mb-2">Project Gallery</h2>
+    <div className="space-y-8">
+      {/* Section Header */}
+      <div className="animate-fade-in-up">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="h-px flex-1 max-w-[40px] bg-primary/40" />
+          <span className="text-xs font-mono text-primary tracking-widest uppercase">Portfolio</span>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-2">Project Gallery</h2>
         <p className="text-muted-foreground">
-          Showcase of automation frameworks and test infrastructure projects
+          Automation frameworks and test infrastructure projects
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+      {/* Project Grid */}
+      <div className="grid md:grid-cols-2 gap-5">
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className="relative group cursor-pointer"
+            className="group cursor-pointer animate-fade-in-up"
             onClick={() => onProjectClick?.(project.id, project.title)}
-            style={{ opacity: 1 }}
+            style={{ animationDelay: `${index * 0.08}s` }}
           >
-            {/* Gradient overlay on hover */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-xl pointer-events-none" />
-
-            {/* Glass effect card */}
-            <div className="relative bg-secondary/40 backdrop-blur-sm border border-border/30 rounded-lg p-4 md:p-6 h-full hover:border-primary/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              {/* Icon header */}
+            <div className="card-elevated rounded-xl p-6 h-full">
+              {/* Header Row */}
               <div className="flex items-start justify-between mb-4">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-primary/30 to-primary/10 border border-primary/20 group-hover:from-primary/50 group-hover:to-primary/30 transition-all">
-                  <div className="text-primary">{project.icon}</div>
+                <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/15 text-primary group-hover:from-primary/25 group-hover:to-primary/10 transition-all">
+                  {project.icon}
                 </div>
+                <ArrowUpRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors" />
               </div>
 
-              {/* Title and description */}
+              {/* Content */}
               <div className="mb-4">
-                <h3 className="text-lg font-bold text-foreground mb-2 line-clamp-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground line-clamp-3">{project.description}</p>
+                <h3 className="text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{project.description}</p>
               </div>
 
-              {/* Frameworks */}
-              <div className="flex flex-wrap gap-2 mb-4">
+              {/* Framework Tags */}
+              <div className="flex flex-wrap gap-1.5 mb-5">
                 {project.frameworks.slice(0, 3).map(framework => (
                   <Badge
                     key={framework}
                     variant="secondary"
-                    className="text-xs font-mono bg-primary/10 text-primary hover:bg-primary/20 border-primary/30"
+                    className="text-[10px] font-mono bg-primary/6 text-primary/80 hover:bg-primary/12 border border-primary/10 px-2 py-0.5"
                   >
                     {framework}
                   </Badge>
                 ))}
                 {project.frameworks.length > 3 && (
-                  <Badge variant="secondary" className="text-xs font-mono bg-muted/50 text-muted-foreground">
+                  <Badge variant="secondary" className="text-[10px] font-mono bg-muted/30 text-muted-foreground border-border/30 px-2 py-0.5">
                     +{project.frameworks.length - 3}
                   </Badge>
                 )}
               </div>
 
-              {/* Divider */}
-              <div className="h-px bg-gradient-to-r from-border/0 via-border/50 to-border/0 my-4" />
+              {/* Separator */}
+              <div className="separator-gradient mb-4" />
 
               {/* Test Results */}
               <div className="space-y-3">
@@ -147,34 +163,39 @@ export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
                   <div className="flex items-center gap-2">
                     {project.testResults.status === 'passing' ? (
                       <>
-                        <CheckCircle2 className="h-4 w-4 text-primary animate-pulse-glow" />
-                        <span className="text-sm font-medium text-primary">Passing</span>
+                        <CheckCircle2 className="h-3.5 w-3.5 text-primary" />
+                        <span className="text-xs font-medium text-primary">All passing</span>
                       </>
                     ) : (
                       <>
-                        <AlertCircle className="h-4 w-4 text-destructive" />
-                        <span className="text-sm font-medium text-destructive">Failed</span>
+                        <AlertCircle className="h-3.5 w-3.5 text-destructive" />
+                        <span className="text-xs font-medium text-destructive">Failed</span>
                       </>
                     )}
                   </div>
-                  <span className="text-xs text-muted-foreground font-mono bg-secondary/50 px-2 py-1 rounded">
+                  <span className="text-[10px] text-muted-foreground font-mono bg-secondary/60 px-2 py-1 rounded-md">
                     {project.testResults.duration}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-3 gap-2 text-xs">
-                  <div className="bg-primary/5 border border-primary/20 rounded p-2 text-center group-hover:bg-primary/10 transition-colors">
-                    <div className="font-bold text-primary">{project.testResults.passed}</div>
-                    <div className="text-muted-foreground text-xs mt-0.5">Passed</div>
-                  </div>
-                  <div className="bg-secondary/50 border border-border/30 rounded p-2 text-center">
-                    <div className="font-bold text-destructive">{project.testResults.failed}</div>
-                    <div className="text-muted-foreground text-xs mt-0.5">Failed</div>
-                  </div>
-                  <div className="bg-secondary/50 border border-border/30 rounded p-2 text-center">
-                    <div className="font-bold text-muted-foreground">{project.testResults.skipped}</div>
-                    <div className="text-muted-foreground text-xs mt-0.5">Skipped</div>
-                  </div>
+                {/* Test Result Bar */}
+                <div className="flex gap-1.5 h-1.5 rounded-full overflow-hidden bg-secondary/40">
+                  <div
+                    className="bg-primary/70 rounded-full transition-all"
+                    style={{ width: `${(project.testResults.passed / (project.testResults.passed + project.testResults.failed + project.testResults.skipped)) * 100}%` }}
+                  />
+                  {project.testResults.failed > 0 && (
+                    <div className="bg-destructive/70 rounded-full" style={{ width: '2%' }} />
+                  )}
+                  {project.testResults.skipped > 0 && (
+                    <div className="bg-muted-foreground/30 rounded-full" style={{ width: '1%' }} />
+                  )}
+                </div>
+
+                <div className="flex items-center gap-4 text-[10px] text-muted-foreground font-mono">
+                  <span><span className="text-primary font-medium">{project.testResults.passed}</span> passed</span>
+                  <span><span className="text-destructive/70">{project.testResults.failed}</span> failed</span>
+                  <span><span className="text-muted-foreground">{project.testResults.skipped}</span> skipped</span>
                 </div>
               </div>
             </div>

@@ -1,15 +1,15 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Outfit, JetBrains_Mono } from 'next/font/google'
 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-sans' })
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
-  title: 'Senior SDET Portfolio | Interactive Quality Engineering',
-  description: 'Explore an interactive SDET portfolio with CI/CD pipeline simulator, test result dashboards, and QA automation expertise.',
+  title: 'Ricardo Castaneda | Senior SDET Portfolio',
+  description: 'Senior SDET with 10+ years in test automation & software development. Cypress, Playwright, Selenium, TypeScript, CI/CD, and Azure DevOps expertise.',
   generator: 'v0.app',
   viewport: {
     width: 'device-width',
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}>
+      <body className={`${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
       </body>
     </html>

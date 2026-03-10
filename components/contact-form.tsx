@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/hooks/use-toast'
-import { Send } from 'lucide-react'
+import { Send, Download, ExternalLink } from 'lucide-react'
 
 export function ContactForm() {
   const { toast } = useToast()
@@ -29,7 +29,6 @@ export function ContactForm() {
     e.preventDefault()
     setIsLoading(true)
 
-    // Simulate submission
     await new Promise(resolve => setTimeout(resolve, 1000))
 
     toast({
@@ -41,26 +40,39 @@ export function ContactForm() {
     setIsLoading(false)
   }
 
+  const contactLinks = [
+    { label: 'Email', value: 'hi@rcastaneda.dev', href: 'mailto:hi@rcastaneda.dev' },
+    { label: 'Website', value: 'rcastaneda.dev', href: 'https://rcastaneda.dev' },
+    { label: 'GitHub', value: 'rcastaneda-dev', href: 'https://github.com/rcastaneda-dev' },
+    { label: 'LinkedIn', value: 'rcastaneda-dev', href: 'https://www.linkedin.com/in/rcastaneda-dev/' },
+  ]
+
   return (
-    <div className="space-y-6">
-      <div>
-        <h2 className="text-2xl font-bold text-foreground mb-2">Get in Touch</h2>
+    <div className="space-y-8">
+      {/* Section Header */}
+      <div className="animate-fade-in-up">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="h-px flex-1 max-w-[40px] bg-primary/40" />
+          <span className="text-xs font-mono text-primary tracking-widest uppercase">Contact</span>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-2">Get in Touch</h2>
         <p className="text-muted-foreground">
-          Submit a bug report or message for collaboration opportunities
+          Submit a bug report or reach out for collaboration
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <Card className="lg:col-span-2 border-border/50">
+        {/* Form */}
+        <Card className="lg:col-span-2 border-border/30 bg-card/60 backdrop-blur-sm animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           <CardHeader>
-            <CardTitle>Bug Report Form</CardTitle>
-            <CardDescription>Tell me about your testing challenges or collaboration ideas</CardDescription>
+            <CardTitle className="text-base">Bug Report Form</CardTitle>
+            <CardDescription className="text-sm">Tell me about testing challenges or collaboration ideas</CardDescription>
           </CardHeader>
 
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="space-y-2">
-                <Label htmlFor="issueTitle" className="text-sm font-medium">
+                <Label htmlFor="issueTitle" className="text-xs font-medium text-muted-foreground">
                   Issue Summary
                 </Label>
                 <Input
@@ -70,12 +82,12 @@ export function ContactForm() {
                   value={formData.issueTitle}
                   onChange={handleChange}
                   required
-                  className="bg-secondary/40 border-border/50"
+                  className="bg-background/50 border-border/40 focus:border-primary/40 focus:ring-primary/20 transition-colors"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="stepsToReproduce" className="text-sm font-medium">
+                <Label htmlFor="stepsToReproduce" className="text-xs font-medium text-muted-foreground">
                   Steps to Reproduce
                 </Label>
                 <Textarea
@@ -85,12 +97,12 @@ export function ContactForm() {
                   value={formData.stepsToReproduce}
                   onChange={handleChange}
                   required
-                  className="bg-secondary/40 border-border/50 min-h-24 resize-none"
+                  className="bg-background/50 border-border/40 focus:border-primary/40 focus:ring-primary/20 min-h-28 resize-none transition-colors"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium">
+                <Label htmlFor="email" className="text-xs font-medium text-muted-foreground">
                   Your Email
                 </Label>
                 <Input
@@ -101,14 +113,14 @@ export function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="bg-secondary/40 border-border/50"
+                  className="bg-background/50 border-border/40 focus:border-primary/40 focus:ring-primary/20 transition-colors"
                 />
               </div>
 
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full gap-2"
+                className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/15 transition-all"
               >
                 <Send className="h-4 w-4" />
                 {isLoading ? 'Submitting...' : 'Submit Bug Report'}
@@ -117,59 +129,48 @@ export function ContactForm() {
           </CardContent>
         </Card>
 
-        {/* Resume Download Section */}
-        <Card className="border-border/50 h-fit sticky top-6">
-          <CardHeader>
-            <CardTitle className="text-base">Build Artifacts</CardTitle>
-          </CardHeader>
+        {/* Sidebar */}
+        <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          {/* Resume Download */}
+          <div className="card-elevated rounded-xl p-5">
+            <div className="text-[10px] font-mono text-muted-foreground tracking-widest uppercase mb-3">Build Artifacts</div>
+            <p className="text-xs text-muted-foreground mb-4">
+              Download resume and portfolio documentation
+            </p>
+            <Button
+              variant="outline"
+              className="w-full gap-2 text-primary border-primary/20 hover:bg-primary/8 hover:border-primary/30 bg-transparent transition-all"
+              asChild
+            >
+              <a href="/resume.pdf" download="ricardo-castaneda-sdet-resume.pdf">
+                <Download className="h-4 w-4" />
+                Download Resume
+              </a>
+            </Button>
+          </div>
 
-          <CardContent className="space-y-4">
-            <div>
-              <p className="text-sm text-muted-foreground mb-4">
-                Download my resume and portfolio documentation
-              </p>
-              <Button
-                variant="outline"
-                className="w-full text-primary border-primary/30 hover:bg-primary/10 bg-transparent"
-                asChild
-              >
-                <a href="/resume.txt" download="sdet-resume.txt">
-                  Download Resume
+          {/* Contact Links */}
+          <div className="card-elevated rounded-xl p-5">
+            <div className="text-[10px] font-mono text-muted-foreground tracking-widest uppercase mb-4">Connect</div>
+            <div className="space-y-3">
+              {contactLinks.map(link => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                  rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                  className="flex items-center justify-between group p-2 -mx-2 rounded-lg hover:bg-primary/5 transition-colors"
+                >
+                  <div>
+                    <p className="text-[10px] text-muted-foreground font-mono uppercase">{link.label}</p>
+                    <p className="text-xs font-medium text-foreground group-hover:text-primary transition-colors">{link.value}</p>
+                  </div>
+                  <ExternalLink className="w-3 h-3 text-muted-foreground/40 group-hover:text-primary transition-colors" />
                 </a>
-              </Button>
+              ))}
             </div>
-
-            <div className="pt-4 border-t border-border/50">
-              <p className="text-xs text-muted-foreground mb-3 font-mono uppercase">Contact & Social</p>
-              <div className="space-y-3">
-                <div>
-                  <p className="text-xs text-muted-foreground">Email</p>
-                  <a href="mailto:ricardo@rcastaneda.dev" className="text-sm font-medium text-primary hover:underline">
-                    ricardo@rcastaneda.dev
-                  </a>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">Website</p>
-                  <a href="https://rcastaneda.dev" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
-                    rcastaneda.dev
-                  </a>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">GitHub</p>
-                  <a href="https://github.com/castanedadev-edu" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
-                    github.com/castanedadev-edu
-                  </a>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">LinkedIn</p>
-                  <a href="https://linkedin.com/in/rcastaneda-dev" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
-                    linkedin.com/in/rcastaneda-dev
-                  </a>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
     </div>
   )
